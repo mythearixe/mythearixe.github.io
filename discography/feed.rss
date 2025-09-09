@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" >
     <channel>
-        <atom:link href="https://mythearixe.us.kg/listen/catalog/feed.rss" rel="self" type="application/rss+xml"/>
-        <description>free listen to all my tracks</description>
+        <atom:link href="https://mythearixe.us.kg/feed.rss" rel="self" type="application/rss+xml"/>
+        <description>Just some of my music</description>
         <generator>Faircamp 1.6.0 (95a1596)</generator>
         <image>
     <height>920</height>
-    <link>https://mythearixe.us.kg/listen/catalog/</link>
-    <title>Me in my studio</title>
-    <url>https://mythearixe.us.kg/listen/catalog/feed.jpg?fpqsQNDOwMk</url>
+    <link>https://mythearixe.us.kg/</link>
+    <title>first mythearixe logo</title>
+    <url>https://mythearixe.us.kg/feed.jpg?fpqsQNDOwMk</url>
     <width>920</width>
 </image>
 
         <language>en</language>
-        <lastBuildDate>Mon, 8 Sep 2025 18:00:51 +0000</lastBuildDate>
-        <link>https://mythearixe.us.kg/listen/catalog/</link>
-        <title>catalog</title>
+        <lastBuildDate>Tue, 9 Sep 2025 18:09:17 +0000</lastBuildDate>
+        <link>https://mythearixe.us.kg/</link>
+        <title>DISCOGRAPHY</title>
         
         <item>
-    <description>long before mythearixe</description>
-    <guid>https://mythearixe.us.kg/listen/catalog/lostfound1999/</guid>
-    <link>https://mythearixe.us.kg/listen/catalog/lostfound1999/</link>
-    <title>mythearixe – lostfound1999</title>
+    <description>Long before mythearixe. All lost, ripped from my social media and soundcloud.</description>
+    <guid>https://mythearixe.us.kg/before-mythearixe/</guid>
+    <link>https://mythearixe.us.kg/before-mythearixe/</link>
+    <title>mythearixe – before mythearixe</title>
     
 </item>
 
