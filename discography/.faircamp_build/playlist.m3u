@@ -1,0 +1,13 @@
+#EXTM3U
+#EXTENC:UTF-8
+#PLAYLIST:catalog
+#EXTIMG:https://mythearixe.us.kg/listen/catalog/image_fixed_480x213.jpg?fpqsQNDOwMk
+#EXTIMG:https://mythearixe.us.kg/listen/catalog/lostfound1999/cover_480.jpg?fpqsQNDOwMk
+#EXTALB:lostfound1999
+#EXTINF:65,  – 1. (I don't wanna) Walk Away
+https://mythearixe.us.kg/listen/catalog/lostfound1999/1/opus-96/LqxMrURJilQ/01%20%28I%20don%27t%20wanna%29%20Walk%20Away.opus
+#EXTINF:151,  – 2. Thuyen Khong Ben Doi
+https://mythearixe.us.kg/listen/catalog/lostfound1999/2/opus-96/Jrw_XCV8TGc/02%20Thuyen%20Khong%20Ben%20Doi.opus
+#EXTINF:120,  – 3. suzume
+https://mythearixe.us.kg/listen/catalog/lostfound1999/3/opus-96/pzfOUvJ4xGY/03%20suzume.opus
+

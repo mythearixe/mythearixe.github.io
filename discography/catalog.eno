@@ -1,0 +1,39 @@
+title: catalog
+base_url: https://mythearixe.us.kg/listen/catalog/
+language: en
+
+label_mode
+show_support_artists
+
+embedding: disabled
+m3u: enabled
+more_label: About
+
+release_downloads:
+- flac
+- mp3
+- opus
+
+home_image:
+description = Me in my studio
+file = catalog.jpg
+
+link:
+url = https://example.com/my-music-elsewhere/
+
+link:
+label = Blog
+url = https://example.com/my-blog/
+
+-- synopsis
+free listen to all my tracks
+-- synopsis
+
+-- more
+
+-- more
+
+theme:
+accent_brightening = 0
+background_alpha = 0
+dynamic_range = 100

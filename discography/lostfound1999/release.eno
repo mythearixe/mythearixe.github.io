@@ -1,0 +1,31 @@
+title: lostfound1999
+permalink: lostfound1999
+
+
+release_artist: mythearixe
+
+release_downloads:
+- flac
+- mp3
+- opus
+
+m3u: disabled
+more_label: Liner Notes
+track_numbering: arabic-dotted
+
+cover:
+description = mythearixe first logo
+file = cover.jpg
+
+-- synopsis
+long before mythearixe
+-- synopsis
+
+-- more
+all lost, downloaded from my uploaded on soundcloud
+-- more
+
+theme:
+accent_brightening = 0
+background_alpha = 0
+dynamic_range = 100

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" >
+    <channel>
+        <atom:link href="https://mythearixe.us.kg/listen/catalog/feed.rss" rel="self" type="application/rss+xml"/>
+        <description>free listen to all my tracks</description>
+        <generator>Faircamp 1.6.0 (95a1596)</generator>
+        <image>
+    <height>920</height>
+    <link>https://mythearixe.us.kg/listen/catalog/</link>
+    <title>Me in my studio</title>
+    <url>https://mythearixe.us.kg/listen/catalog/feed.jpg?fpqsQNDOwMk</url>
+    <width>920</width>
+</image>
+
+        <language>en</language>
+        <lastBuildDate>Mon, 8 Sep 2025 18:00:51 +0000</lastBuildDate>
+        <link>https://mythearixe.us.kg/listen/catalog/</link>
+        <title>catalog</title>
+        
+        <item>
+    <description>long before mythearixe</description>
+    <guid>https://mythearixe.us.kg/listen/catalog/lostfound1999/</guid>
+    <link>https://mythearixe.us.kg/listen/catalog/lostfound1999/</link>
+    <title>mythearixe – lostfound1999</title>
+    
+</item>
+
+    </channel>
+</rss>
