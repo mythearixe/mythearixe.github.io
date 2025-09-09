@@ -1,7 +1,5 @@
 No AI contents are used in this entire website.
 
-[mythearixe.us.kg](https://mythearixe.us.kg/)
-
 This is the GitHub repository that I host my website [mythearixe.us.kg](https://mythearixe.us.kg/).
 
 Hope you will learn something else through my codes.
