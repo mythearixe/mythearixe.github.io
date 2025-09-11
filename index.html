@@ -1,11 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mythearixe</title>
+  <meta charset="UTF-8">
+  <title>R/XE Random</title>
+  <style>
+  .highlight {
+    color: #70b9cf;
+    font-weight: bold;
+    text-shadow: 0 0 5px #70b9cf,
+                0 0 10px #70b9cf;
+  }
+
+  a {
+    color: #ffffff;        /* màu link bình thường */
+    text-decoration: none; /* bỏ gạch chân nếu muốn */
+  }
+
+  a:visited {
+    color: #ffffff; /* để cùng màu như link thường, không bị tím */
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+
+    body {
+      display: flex;
+      flex-direction: column; /* cho mọi thứ xếp dọc */
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #000000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+    #text {
+      font-size: 5rem;
+      margin-bottom: 20px; /* cách nội dung bên dưới */
+    }
+    .highlight {
+      color: #70b9cf;
+      font-weight: bold;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  </style>
 </head>
 <body>
-    <a href="discography/">DISCOGRAPHY</a>
+  <!-- chữ random -->
+  <div id="text">R/<span id="random" class="highlight">X</span>E</div>
+
+  <!-- chữ bên dưới -->
+  <a href="/ABOUT">/ABOUT/</a>
+  <a href="/FIND ME">/FIND ME/</a>
+  <a href="/DISCOGRAPHY">/DISCOGRAPHY/</a>
+  <a href="/LISTEN">/LISTEN/</a>
+
+  <script>
+    const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=[]{};:,.<>/?";
+    const sequence = ["S", "Z", "X"]; // thứ tự cố định
+    let currentIndex = 0;
+    const randomSpan = document.getElementById("random");
+
+    let interval;
+    function startRandom() {
+      interval = setInterval(() => {
+      const randomChar = chars[Math.floor(Math.random() * chars.length)];
+      randomSpan.textContent = randomChar;
+      }, 20); // chạy nhanh
+    }
+
+    function stopRandom() {
+      clearInterval(interval);
+      randomSpan.textContent = sequence[currentIndex];
+      currentIndex = (currentIndex + 1) % sequence.length;
+    }
+
+    function loopRandom() {
+      startRandom();
+      setTimeout(() => {
+        stopRandom();
+        setTimeout(loopRandom, 2000); // 2s sau lại chạy tiếp
+      }, 1400); // chạy random 2s rồi dừng
+    }
+
+    loopRandom();
+  </script>
 </body>
 </html>
