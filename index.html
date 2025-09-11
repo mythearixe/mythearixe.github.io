@@ -4,11 +4,15 @@
   <meta charset="UTF-8">
   <title>mythearixe</title>
   <style>
+  :root {
+    --rand-color: #30a9e6;   /* giống như const */
+  }
+  
   .highlight {
-    color: #70b9cf;
+    color: var(--rand-color);
     /* font-weight: bold; */
-    text-shadow: 0 0 2px #70b9cf,
-                 0 0 4px #70b9cf;
+    text-shadow: 0 0 2px var(--rand-color),
+                 0 0 4px var(--rand-color);
   }
 
   a {
@@ -36,6 +40,7 @@
       background: #000000;
       color: #fff;
       font-family: Arial, sans-serif;
+      font-weight: bold;
     }
     #text {
       font-size: 5rem;
