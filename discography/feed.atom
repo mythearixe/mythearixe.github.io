@@ -10,9 +10,11 @@
     <id>https://mythearixe.us.kg/</id>
     <link href="https://mythearixe.us.kg/feed.atom" rel="self"/>
     <logo>https://mythearixe.us.kg/feed.jpg?fpqsQNDOwMk</logo>
-    <subtitle>Just some of my music</subtitle>
+    <subtitle>mythearixe's archive.
+
+Ready to dive, or fly.</subtitle>
     <title>DISCOGRAPHY</title>
-    <updated>2025-09-11T06:24:27.261480200+00:00</updated>
+    <updated>2025-09-11T19:27:00.029768500+00:00</updated>
     <entry>
     <author>
     <name>mythearixe</name>
@@ -23,7 +25,7 @@
     <link href="https://mythearixe.us.kg/before-mythearixe/" rel="alternate"/>
     <title>mythearixe – before mythearixe</title>
     <summary>Long before mythearixe. All lost, ripped from my social media and soundcloud.</summary>
-    <updated>2025-09-11T06:24:27.261480200+00:00</updated>
+    <updated>2025-09-11T19:27:00.029768500+00:00</updated>
 </entry>
 
 </feed>

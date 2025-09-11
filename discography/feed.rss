@@ -2,7 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" >
     <channel>
         <atom:link href="https://mythearixe.us.kg/feed.rss" rel="self" type="application/rss+xml"/>
-        <description>Just some of my music</description>
+        <description>mythearixe's archive.
+
+Ready to dive, or fly.</description>
         <generator>Faircamp 1.6.0 (95a1596)</generator>
         <image>
     <height>920</height>
@@ -13,7 +15,7 @@
 </image>
 
         <language>en</language>
-        <lastBuildDate>Thu, 11 Sep 2025 06:24:27 +0000</lastBuildDate>
+        <lastBuildDate>Thu, 11 Sep 2025 19:27:00 +0000</lastBuildDate>
         <link>https://mythearixe.us.kg/</link>
         <title>DISCOGRAPHY</title>
         
