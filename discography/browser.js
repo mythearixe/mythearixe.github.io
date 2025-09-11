@@ -8,6 +8,23 @@ const LABEL_MODE = false;
 const ARTISTS = [];
 const RELEASES = [{
     
+    cover: 'cover_160.jpg?NSvzOfbY-3Q',
+    title: 'ISOKNOCK - THRASH (mythearixe DnB Edit)',
+    tracks: [
+        {
+    
+    
+    number: '1.',
+    title: 'ISOKNOCK - THRASH (Mythearixe DnB Edit)',
+    url: 'thrash-dnb/1/'
+}
+
+    ],
+    url: 'thrash-dnb/'
+}
+,
+{
+    
     cover: 'cover_160.jpg?fpqsQNDOwMk',
     title: 'before mythearixe',
     tracks: [
