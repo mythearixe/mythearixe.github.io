@@ -5,23 +5,60 @@
   <title>mythearixe</title>
   <style>
   :root {
-    --rand-color: #30a9e6;   /* giống như const */
+    --rand-color: #ffffff; /* dùng cho chữ random */
   }
   
-  .highlight {
+  /* .highlight {
     color: var(--rand-color);
-    /* font-weight: bold; */
     text-shadow: 0 0 2px var(--rand-color),
                  0 0 4px var(--rand-color);
-  }
+  } */
 
   a {
-    color: #ffffff;        /* màu link bình thường */
-    text-decoration: none; /* bỏ gạch chân nếu muốn */
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    margin: 10px 0;
+    padding: 0.5em 1em;
+    transition: color 0.3s ease;
   }
 
   a:visited {
-    color: #ffffff; /* để cùng màu như link thường, không bị tím */
+    color: #ffffff;
+  }
+
+  /* Effect 1: border trắng, mảnh */
+  a::after,
+  a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border: 1px solid #fff; /* mảnh và trắng */
+    transition: all 0.6s ease;
+    border-radius: 2px;
+  }
+
+  a::after {
+    bottom: 0;
+    right: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+  }
+
+  a::before {
+    top: 0;
+    left: 0;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+  }
+
+  a:hover::after,
+  a:hover::before {
+    width: 100%;
+    height: 100%;
   }
 
   html, body {
@@ -31,69 +68,52 @@
     overflow: hidden;
   }
 
-    body {
-      display: flex;
-      flex-direction: column; /* cho mọi thứ xếp dọc */
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background: #000000;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      font-weight: bold;
-    }
-    #text {
-      font-size: 5rem;
-      margin-bottom: 20px; /* cách nội dung bên dưới */
-    }
-    .highlight {
-      color: #70b9cf;
-      font-weight: bold;
-    }
-    p {
-      font-size: 1.2rem;
-    }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #000000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+  }
+
+  #text {
+    font-size: 5rem;
+    margin-bottom: 20px;
+  }
+
+  .highlight {
+    color: #ffffff;
+    font-weight: bold;
+  }
   </style>
 </head>
 <body>
   <!-- chữ random -->
   <div id="text">R/<span id="random" class="highlight">X</span>E</div>
 
-  <!-- chữ bên dưới -->
+  <!-- 4 link -->
   <a href="/about">/ABOUT/</a>
   <a href="/links">/FIND ME/</a>
   <a href="/discography">/DISCOGRAPHY/</a>
   <a href="/listen">/LISTEN/</a>
 
-  <script>
-    const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    const sequence = ["S", "Z", "X"]; // thứ tự cố định
-    let currentIndex = 0;
-    const randomSpan = document.getElementById("random");
+<script>
+  const sequence = ["S", "Z", "X"];
+  let currentIndex = 0;
+  const randomSpan = document.getElementById("random");
 
-    let interval;
-    function startRandom() {
-      interval = setInterval(() => {
-      const randomChar = chars[Math.floor(Math.random() * chars.length)];
-      randomSpan.textContent = randomChar;
-      }, 20); // chạy nhanh
-    }
+  function loopText() {
+    randomSpan.textContent = sequence[currentIndex];
+    currentIndex = (currentIndex + 1) % sequence.length;
+    setTimeout(loopText, 2000); // đổi sau 2 giây
+  }
 
-    function stopRandom() {
-      clearInterval(interval);
-      randomSpan.textContent = sequence[currentIndex];
-      currentIndex = (currentIndex + 1) % sequence.length;
-    }
+  loopText();
+</script>
 
-    function loopRandom() {
-      startRandom();
-      setTimeout(() => {
-        stopRandom();
-        setTimeout(loopRandom, 2000); // 2s sau lại chạy tiếp
-      }, 1400); // chạy random 2s rồi dừng
-    }
-
-    loopRandom();
-  </script>
 </body>
 </html>
